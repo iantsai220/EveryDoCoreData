@@ -8,11 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "addToDoViewController.h"
+#import "CoreDataStack.h"
 
-@interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+
+
+@interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate, AddToDoProtocol>
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
-@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+
+@property (nonatomic) CoreDataStack *coreData;
+
 
 
 @end

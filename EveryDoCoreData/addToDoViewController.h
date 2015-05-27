@@ -7,7 +7,30 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ToDo.h"
+
+@protocol AddToDoProtocol <NSObject>
+
+-(ToDo *) addToDo;
+
+-(void) didCreateTodo: (ToDo *) todo;
+
+
+@end
 
 @interface addToDoViewController : UIViewController
+
+@property (nonatomic, weak) id<AddToDoProtocol> delegate;
+
+
+@property (weak, nonatomic) IBOutlet UITextField *titleTextField;
+
+@property (weak, nonatomic) IBOutlet UITextField *detailTextField;
+
+@property (weak, nonatomic) IBOutlet UITextField *priorityTextField;
+
+- (IBAction)submitWasPressed:(UIButton *)sender;
+
+
 
 @end

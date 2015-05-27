@@ -7,6 +7,7 @@
 //
 
 #import "addToDoViewController.h"
+#import "ToDo.h"
 
 @interface addToDoViewController ()
 
@@ -34,4 +35,17 @@
 }
 */
 
+- (IBAction)submitWasPressed:(UIButton *)sender {
+    
+    ToDo *todo = [self.delegate addToDo];
+    
+    todo.title = self.titleTextField.text;
+    todo.detail = self.detailTextField.text;
+    todo.priorityNumber = [self.priorityTextField.text intValue];
+    
+    [self.delegate didCreateTodo:todo];
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
 @end

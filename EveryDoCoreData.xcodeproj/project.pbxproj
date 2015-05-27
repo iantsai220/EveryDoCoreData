@@ -16,6 +16,11 @@
 		96B447FC1B14F2B2000154CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96B447FB1B14F2B2000154CB /* Images.xcassets */; };
 		96B447FF1B14F2B2000154CB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96B447FD1B14F2B2000154CB /* LaunchScreen.xib */; };
 		96B4480B1B14F2B2000154CB /* EveryDoCoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B4480A1B14F2B2000154CB /* EveryDoCoreDataTests.m */; };
+		96B448161B14FAB0000154CB /* ToDo.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B448151B14FAB0000154CB /* ToDo.m */; };
+		96B448191B1529D4000154CB /* addToDoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B448181B1529D4000154CB /* addToDoViewController.m */; };
+		96B4481F1B154876000154CB /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B4481E1B154876000154CB /* User.m */; };
+		96B448221B1556A9000154CB /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B448211B1556A9000154CB /* CoreDataStack.m */; };
+		96B448281B1626A7000154CB /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B448271B1626A7000154CB /* UserViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,16 @@
 		96B448041B14F2B2000154CB /* EveryDoCoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EveryDoCoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B448091B14F2B2000154CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96B4480A1B14F2B2000154CB /* EveryDoCoreDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EveryDoCoreDataTests.m; sourceTree = "<group>"; };
+		96B448141B14FAB0000154CB /* ToDo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToDo.h; path = ../ToDo.h; sourceTree = "<group>"; };
+		96B448151B14FAB0000154CB /* ToDo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ToDo.m; path = ../ToDo.m; sourceTree = "<group>"; };
+		96B448171B1529D4000154CB /* addToDoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addToDoViewController.h; sourceTree = "<group>"; };
+		96B448181B1529D4000154CB /* addToDoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addToDoViewController.m; sourceTree = "<group>"; };
+		96B4481D1B154876000154CB /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = ../User.h; sourceTree = "<group>"; };
+		96B4481E1B154876000154CB /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = ../User.m; sourceTree = "<group>"; };
+		96B448201B1556A9000154CB /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
+		96B448211B1556A9000154CB /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
+		96B448261B1626A7000154CB /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
+		96B448271B1626A7000154CB /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,12 +101,22 @@
 		96B447E71B14F2B2000154CB /* EveryDoCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				96B448141B14FAB0000154CB /* ToDo.h */,
+				96B448151B14FAB0000154CB /* ToDo.m */,
 				96B447EC1B14F2B2000154CB /* AppDelegate.h */,
 				96B447ED1B14F2B2000154CB /* AppDelegate.m */,
+				96B448201B1556A9000154CB /* CoreDataStack.h */,
+				96B448211B1556A9000154CB /* CoreDataStack.m */,
 				96B447F21B14F2B2000154CB /* MasterViewController.h */,
 				96B447F31B14F2B2000154CB /* MasterViewController.m */,
+				96B448171B1529D4000154CB /* addToDoViewController.h */,
+				96B448181B1529D4000154CB /* addToDoViewController.m */,
 				96B447F51B14F2B2000154CB /* DetailViewController.h */,
 				96B447F61B14F2B2000154CB /* DetailViewController.m */,
+				96B448261B1626A7000154CB /* UserViewController.h */,
+				96B448271B1626A7000154CB /* UserViewController.m */,
+				96B4481D1B154876000154CB /* User.h */,
+				96B4481E1B154876000154CB /* User.m */,
 				96B447F81B14F2B2000154CB /* Main.storyboard */,
 				96B447FB1B14F2B2000154CB /* Images.xcassets */,
 				96B447FD1B14F2B2000154CB /* LaunchScreen.xib */,
@@ -227,11 +252,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96B4481F1B154876000154CB /* User.m in Sources */,
+				96B448281B1626A7000154CB /* UserViewController.m in Sources */,
+				96B448191B1529D4000154CB /* addToDoViewController.m in Sources */,
 				96B447F71B14F2B2000154CB /* DetailViewController.m in Sources */,
 				96B447F41B14F2B2000154CB /* MasterViewController.m in Sources */,
 				96B447EE1B14F2B2000154CB /* AppDelegate.m in Sources */,
 				96B447EB1B14F2B2000154CB /* main.m in Sources */,
 				96B447F11B14F2B2000154CB /* EveryDoCoreData.xcdatamodeld in Sources */,
+				96B448161B14FAB0000154CB /* ToDo.m in Sources */,
+				96B448221B1556A9000154CB /* CoreDataStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +456,7 @@
 				96B448101B14F2B2000154CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96B448111B14F2B2000154CB /* Build configuration list for PBXNativeTarget "EveryDoCoreDataTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +465,7 @@
 				96B448131B14F2B2000154CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
